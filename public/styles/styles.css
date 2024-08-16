@@ -17,7 +17,7 @@ body {
 #menu {
    background-color: aliceblue;
    width: 25em;
-   height: 600px;
+   height: 450px;
    box-shadow: 0 0 20px 10px rgb(6, 93, 255);
    border-radius: 30px;
    
@@ -81,4 +81,24 @@ h1.title {
 
 .button:hover {
    background-color: aquamarine;
+}
+
+#rslt {
+   background-color: grey;
+   color: white;
+   height: 164px;
+   border-end-end-radius: 30px;;
+   border-end-start-radius: 30px;;
+   text-align: center;
+}
+
+h2 {
+   padding-right: 200px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   font-size: 35px;
+}
+
+.rslt {
+   font-size: 40px;
 }

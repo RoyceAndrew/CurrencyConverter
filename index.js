@@ -1,5 +1,5 @@
 import express from "express";
-import exios from "axios";
+import axios from "axios";
 import bodyParser from "body-parser";
 
 const port = 3000;
@@ -12,8 +12,19 @@ app.get("/", (req, res) => {
     res.render("index.ejs")
 })
 
-app.post("/result", (req, res) => {
-    console.log(req.body)
+app.post("/result", async (req, res) => {
+    try {
+    const check = await axios.get("https://api.frankfurter.app/latest?amount="+req.body.amount+"&from="+req.body.from+"&to="+req.body.to);
+    const result = check.data;
+    const currency = req.body.to;
+    const exchangeRate = result.rates[currency];
+    res.render("index.ejs", { rslt: `${exchangeRate} ${currency}` });
+    //res.render(index.ejs, {rslt: result.req.body.to})
+    console.log 
+    } catch(error) {
+        console.log(error)
+    }
+    
 })
 
 app.listen(port, () => {

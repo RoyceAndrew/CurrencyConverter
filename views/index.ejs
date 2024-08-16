@@ -60,6 +60,13 @@
     </div>
     <input type="submit" class="button"  formaction="/result">
 </form>
+    <% if (locals.rslt) { %>
+     <div id="rslt">
+      <h2>Result:</h2>
+      <h1 class="rslt"><%= rslt %></h1>
+     </div>
+    <%} else {%>
+        <% } %>
       </section>
     </body>
 </html>
