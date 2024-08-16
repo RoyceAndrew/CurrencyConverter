@@ -1,0 +1,32 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url("../image/pattern_scales-6_1_2_0-0_140_1__64a0f4_3b7cd8.png");
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   height: 100vh;
+}
+
+#menu {
+   background-color: aliceblue;
+   width: 100em;
+   height: 750px;
+   text-align: center;
+   box-shadow: 0 0 20px 10px rgb(6, 93, 255);
+   border-radius: 30px;
+   
+}
+
+#menu h1 {
+   margin-top: 10px;
+   padding-bottom: 10px;
+   font-size: xx-large;
+   border-bottom: 5px solid black;
+}
