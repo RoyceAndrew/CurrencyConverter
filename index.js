@@ -22,7 +22,7 @@ app.post("/result", async (req, res) => {
     //res.render(index.ejs, {rslt: result.req.body.to})
     console.log 
     } catch(error) {
-        console.log(error)
+    res.render("index.ejs", { rslt: `The currency should be diff` });
     }
     
 })
