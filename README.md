@@ -1,0 +1,1 @@
+You guys can clone my repository, after that just install the modules by "npm i" in bash terminal and after that just run the server from index.js, or maybe can download nodemon first by "npm i -g nodemon" and "nodemon index.js" and the server will be up at localhost:3000.
