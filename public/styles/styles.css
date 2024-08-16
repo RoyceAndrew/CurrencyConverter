@@ -16,17 +16,69 @@ body {
 
 #menu {
    background-color: aliceblue;
-   width: 100em;
-   height: 750px;
-   text-align: center;
+   width: 25em;
+   height: 600px;
    box-shadow: 0 0 20px 10px rgb(6, 93, 255);
    border-radius: 30px;
    
 }
 
-#menu h1 {
+h1.title {
    margin-top: 10px;
    padding-bottom: 10px;
    font-size: xx-large;
-   border-bottom: 5px solid black;
+   border-bottom: 5px solid grey;
+   text-align: center;
+}
+
+#from-currency, #to-currency {
+   display: flex;
+   padding-top: 30px;
+}
+
+.big  {
+   font-size: x-large
+}
+
+.medium {
+   font-size: large;
+}
+
+#from-to {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: auto;
+
+}
+
+.space {
+  margin-right: 5px;
+}
+
+.spc {
+   margin-left: 60px;
+   margin-top: 30px;
+   
+}
+
+
+.length {
+   width: 195px;
+}
+
+.button {
+   height: 50px;
+   width: 100px;
+   border: none;
+   background-color: aqua;
+   transition: ease-out 0.3s;
+   font-size: medium;
+   border-radius: 5px;
+   display: flex;
+   margin: 30px 150px;
+}
+
+.button:hover {
+   background-color: aquamarine;
 }

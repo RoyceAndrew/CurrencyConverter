@@ -8,8 +8,58 @@
     </head>
     <body>
       <section id="menu">
-        <h1>Currency Converter</h1>
-
+        <h1 class="title">Currency Converter</h1>
+        <form method="post">
+        <div id="from-to">
+        <div id="from-currency">
+         <label class="big space" for="from">From</label>
+         <select class="medium" id="from" name="from" required>
+           <option>...</option>
+           <option value="USD">USD</option>
+           <option value="AUD">AUD</option>
+           <option value="BGN">BGN</option>
+           <option value="BRL">BRL</option>
+           <option value="CAD">CAD</option>
+           <option value="CHF">CHF</option>
+           <option value="CNY">CNY</option>
+           <option value="CZK">CZK</option>
+           <option value="IDR">IDR</option>
+           <option value="ILS">ILS</option>
+           <option value="JPY">JPY</option>
+           <option value="KRW">KRW</option>
+           <option value="MYR">MYR</option>
+           <option value="NOK">NOK</option>
+           <option value="PHP">PHP</option>
+         </select>
+        </div>
+        <div id="to-currency">
+         <label class="big space" for="to">To</label>
+            <select class="medium" id="to" name="to" required>
+              <option>...</option>
+           <option value="USD">USD</option>
+           <option value="AUD">AUD</option>
+           <option value="BGN">BGN</option>
+           <option value="BRL">BRL</option>
+           <option value="CAD">CAD</option>
+           <option value="CHF">CHF</option>
+           <option value="CNY">CNY</option>
+           <option value="CZK">CZK</option>
+           <option value="IDR">IDR</option>
+           <option value="ILS">ILS</option>
+           <option value="JPY">JPY</option>
+           <option value="KRW">KRW</option>
+           <option value="MYR">MYR</option>
+           <option value="NOK">NOK</option>
+           <option value="PHP">PHP</option>
+            </select>
+        </div>
+    </div>
+    <div id="amountt" class="spc">
+        <label class="big" for="amount">Amount</label>
+        <input class=" medium length" type="number" name="amount" required>
+    </div>
+    <input type="submit" class="button"  formaction="/result">
+</form>
       </section>
     </body>
 </html>
